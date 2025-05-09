@@ -13,3 +13,16 @@ class Solution {
         return ans.toString();
     }
 }
+
+// class Solution {
+//     public String longestCommonPrefix(String[] words) {
+//           if (words.length == 0) return "";
+//         String prefix = words[0];
+//         for (int i = 1; i < words.length; i++) {
+//             while (prefix.length() > 0 && !words[i].startsWith(prefix)) {
+//                 prefix = prefix.substring(0, prefix.length() - 1);
+//             }
+//         }
+//         return prefix;
+//     }
+// }
