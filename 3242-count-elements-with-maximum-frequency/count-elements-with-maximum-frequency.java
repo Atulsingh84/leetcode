@@ -5,14 +5,16 @@ class Solution {
 
         for(int i : nums){
             count[i]++;
+        }
+          
+        for(int c:count){
+            if(max < c) max = c;   
+            }
 
-            if(max < count[i]){
-                max = count[i];
-                freq = max;
-            }
-            else if (max == count[i]){
-                freq += count[i];
-            }
+
+        for(int c:count){   
+         if (max == c)freq += c;
+            
         }
 
         return freq;
